@@ -26,7 +26,7 @@ public class TranslatorServiceTest {
   }
 
   @Test
-  public void translateTest() {
+  public void translateTestEsAf() {
     TranslatedText translatedText = translatorService.translate("es", "af", "Esto es una prueba de servicio de traducción");
     assertEquals("Dit is'n bewys van die vertaling diens", translatedText.getTranslation());
   }
