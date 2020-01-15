@@ -1,4 +1,9 @@
 language: java
 jdk: openjdk8
 before_install:
-- openssl aes-256-cbc -K $encrypted_0f725f212537_key -iv $encrypted_0f725f212537_iv -in src/main/resources/application.properties.enc -out src/main/resources/application.properties -d
+- openssl aes-256-cbc -K $encrypted_0f725f212537_key -iv $encrypted_0f725f212537_iv
+  -in src/main/resources/application.properties.enc -out src/main/resources/application.properties
+  -d
+env:
+  global:
+    secure: "fUo+FgCg0jjtYorgsMtglpaf2k/VjlYC8RQo9nJizNIZgOUCofTInmDZT5tI1F9WcsvSc91WsRhxzTNYmPTZuVURoBM3IFGwQ9ukJam/NvnuH+26SmsVvCOkRLngcnuxqGxAb6OXbwWwyc0+D/pwRitigh27ObwzBhCT78f7GFgKj1B+ZgP7gEVQyBL3qyfeglYy915fRhlp+R32zT+MRxrTNx3VwsX111QXdCBBC6jnbcxmqRzE7p5h6sqkV4BrOowYEN7C1LczEQBs8kUa4tEhcxWt/hh6yAwgs/ay2sOUS4aJ25lE0NbKPc5PRPuFtOVzVXrnshibOkEHFqPTRpZXikgKYmFoQJtxWihWJ4fel8VDeSNliqUeg6BEfT467Kj2Hw1a3XUs+/ivmmnzaO8rx+ovbdtHNiTcpkngWDmKVHPtudFtaoNjoU6DtEzEQFAmRK/BFge0SluX9NRNn+g2ZnZ8LUlNQA+BNGmVdigjsO2avLZnBq2+T9NFeO96IBg9CvDPV1vHwy9v/RQ4wN+K9y+t7TBXzR3lW6pDr86Vuqvh1UbMwp+Kzv1mm6bavfFuce+9c55Gu6nX95oteB0n7jR1bYfk+z2brZdJpy/p+lVU0jbP+oTlcbpU40IaMNlVmiuIxWA5xDWZpOqVP1B9xjPS3Sev3rxb4ScXyn0="
